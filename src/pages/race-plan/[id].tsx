@@ -4,14 +4,11 @@ import { racePlanData } from '@/data/racePlans'
 import Layout from '@/components/Layout'
 import RacePlan from '@/views/RacePlanView'
 
-const MountainPage = () => {
+const RacePlanPage = () => {
   const router = useRouter()
 
   const { id } = router.query
-
   const racePlan = racePlanData.find((item) => item.id === Number(id))
-
-  console.log(racePlan)
 
   if (!racePlan) return <div>Loading...</div>
 
@@ -22,4 +19,4 @@ const MountainPage = () => {
   )
 }
 
-export default MountainPage
+export default RacePlanPage

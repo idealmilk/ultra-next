@@ -1,0 +1,28 @@
+import type { TRace } from '@/interfaces/race'
+
+export const raceData: TRace[] = [
+  {
+    id: 1,
+    title: 'Izu Trail Journey 70k',
+    date: '2024-12-09T00:00:00.000Z',
+    type: 'trail',
+    distance: 68.8,
+    elevation: 3000,
+  },
+  {
+    id: 2,
+    title: 'Heizan 70k',
+    date: '2025-03-09T00:00:00.000Z',
+    type: 'trail',
+    distance: 70,
+    elevation: 5000,
+  },
+  {
+    id: 3,
+    title: 'OKUSHINANO100',
+    date: '2025-06-09T00:00:00.000Z',
+    type: 'trail',
+    distance: 70,
+    elevation: 4000,
+  },
+]

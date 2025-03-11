@@ -4,4 +4,5 @@ export type TRace = {
   date: Date | string
   type: 'road' | 'trail'
   distance: number
+  elevation: number
 }

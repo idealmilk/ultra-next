@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 // import { useAuth } from '@/hooks/useAuth'
-import { signOut } from '@/lib/firebase/auth'
+// import { signOut } from '@/lib/firebase/auth'
 
 const Header = () => {
   const router = useRouter()
@@ -12,7 +12,7 @@ const Header = () => {
       <div className="relative flex items-center justify-between">
         <Link href="/">
           <p className="">
-            百名山
+            ULTRA AI
           </p>
         </Link>
         <nav className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center gap-4">
@@ -28,9 +28,9 @@ const Header = () => {
         </nav>
         {/* {user ? ( */}
         <div className='flex gap-4'>
-          <button onClick={signOut}>
+          {/* <button onClick={signOut}>
               Logout
-          </button>
+          </button> */}
           <Link href="/dashboard">
             Dashboard
           </Link>
