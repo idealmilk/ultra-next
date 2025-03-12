@@ -1,5 +1,6 @@
 import dayjs from 'dayjs'
 
+import CreateForm from '@/components/CreateForm'
 import type { TRace } from '@/interfaces/race'
 
 type CreateViewProps = {
@@ -23,6 +24,8 @@ const CreateView = ({ race }: CreateViewProps) => {
             <p>Elevation: <span>{race.elevation}m</span></p>
           </div>
         </div>
+        
+        <CreateForm />
       </div>
     </div>
   )
