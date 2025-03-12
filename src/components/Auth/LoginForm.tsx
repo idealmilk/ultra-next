@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
-import { signInWithEmail, signInWithGoogle } from '@/lib/firebase/auth'
+// import { signInWithEmail, signInWithGoogle } from '@/lib/firebase/auth'
 
 type LoginFormInputs = {
   email: string
@@ -15,7 +15,7 @@ const LoginForm = () => {
 
   const handleLogin = async (data: LoginFormInputs) => {
     try {
-      await signInWithEmail(data)
+      // await signInWithEmail(data)
       router.push('/')
     }
     catch (error) {
@@ -26,7 +26,7 @@ const LoginForm = () => {
 
   const handleLoginWithGoogle = async () => {
     try {
-      await signInWithGoogle()
+      // await signInWithGoogle()
       router.push('/')
     }
     catch (error) {

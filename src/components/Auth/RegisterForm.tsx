@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
-import { signUp } from '@/lib/firebase/auth'
+// import { signUp } from '@/lib/firebase/auth'
 
 type RegisterFormInputs = {
   email: string
@@ -21,7 +21,7 @@ const RegisterForm = () => {
     }
 
     try {
-      await signUp({ email: data.email, password: data.password })
+      // await signUp({ email: data.email, password: data.password })
       router.push('/')
     }
     catch (err) {
