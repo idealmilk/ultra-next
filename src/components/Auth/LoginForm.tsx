@@ -10,19 +10,21 @@ type LoginFormInputs = {
 const LoginForm = () => {
   const router = useRouter()
   const {
-    register, handleSubmit, formState: { errors }, setError, 
+    register, 
+    // handleSubmit, 
+    formState: { errors }, setError, 
   } = useForm<LoginFormInputs>()
 
-  const handleLogin = async (data: LoginFormInputs) => {
-    try {
-      // await signInWithEmail(data)
-      router.push('/')
-    }
-    catch (error) {
-      console.error(error)
-      setError('email', { type: 'manual', message: 'Invalid email or password' })
-    }
-  }
+  // const handleLogin = async (data: LoginFormInputs) => {
+  //   try {
+  //     // await signInWithEmail(data)
+  //     router.push('/')
+  //   }
+  //   catch (error) {
+  //     console.error(error)
+  //     setError('email', { type: 'manual', message: 'Invalid email or password' })
+  //   }
+  // }
 
   const handleLoginWithGoogle = async () => {
     try {
@@ -41,7 +43,10 @@ const LoginForm = () => {
       
       {errors.email && <p className="text-red-500">{errors.email.message}</p>}
 
-      <form onSubmit={handleSubmit(handleLogin)} className="space-y-4">
+      <form
+        // onSubmit={handleSubmit(handleLogin)}
+        className="space-y-4"
+      >
         <input
           type="email"
           placeholder="Email"

@@ -1,9 +1,10 @@
+import type { ReactNode } from 'react'
 import { useState } from 'react'
 
 type TabsProps = {
   data: {
     header: string
-    content: string
+    content: ReactNode
   }[]
 }
 

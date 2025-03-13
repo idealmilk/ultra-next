@@ -10,6 +10,7 @@ export const racePlanData: TRacePlan[] = [
       date: '2024-12-09T00:00:00.000Z',
       type: 'trail',
       distance: 68.8,
+      elevation: 3000,
     },
   },
   {
@@ -21,6 +22,7 @@ export const racePlanData: TRacePlan[] = [
       date: '2025-03-09T00:00:00.000Z',
       type: 'trail',
       distance: 70,
+      elevation: 5000,
     },
   },
   {
@@ -32,6 +34,7 @@ export const racePlanData: TRacePlan[] = [
       date: '2025-06-09T00:00:00.000Z',
       type: 'trail',
       distance: 70,
+      elevation: 4000,
     },
   },
 ]
